@@ -1,5 +1,6 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
+
 source ~/.vimrc
 
 call plug#begin()
@@ -22,6 +23,12 @@ Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " https://github.com/easymotion/vim-easymotion
-map / <Plug>(easymotion-sn)
+map , <Plug>(easymotion-sn)
 
 let g:AutoPairs={'(':')', '[':']', '{':'}', '"':'"', "`":"`", '```':'```', '"""':'"""', "'''":"'''"}
+
+
+" https://github.com/Olical/conjure/blob/master/doc/conjure.txt#L88
+set splitright
+" https://learnvimscriptthehardway.stevelosh.com/chapters/12.html
+autocmd BufNewFile,BufRead *.scm ConjureLogVSplit 
