@@ -20,6 +20,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdtree'
+
 call plug#end()
 
 " https://github.com/easymotion/vim-easymotion
@@ -32,3 +34,4 @@ let g:AutoPairs={'(':')', '[':']', '{':'}', '"':'"', "`":"`", '```':'```', '"""'
 set splitright
 " https://learnvimscriptthehardway.stevelosh.com/chapters/12.html
 autocmd BufNewFile,BufRead *.scm ConjureLogVSplit 
+autocmd BufNewFile,BufRead *.scm inoremap ; <esc>

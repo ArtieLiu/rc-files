@@ -1,9 +1,9 @@
 call plug#begin()
-Plug 'preservim/NERDTree'
 Plug 'morhetz/gruvbox'
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 set t_Co=256
@@ -38,8 +38,7 @@ nnoremap L <c-w>l
 " https://learnvimscriptthehardway.stevelosh.com/chapters/10.html
 " inoremap <esc> <nop>
 
-nnoremap <Leader>f :NERDTreeToggle<Enter>
-nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+nnoremap <localleader>b :NERDTreeToggle<Enter>
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
