@@ -74,3 +74,5 @@ map , :action AceAction<CR>
 " Press `g` to activate Line Mode
 " map , :action AceLineAction<CR>
 
+" turnoff highlight by pressing enter in normal mode
+nnoremap <return> :noh<return><esc>
