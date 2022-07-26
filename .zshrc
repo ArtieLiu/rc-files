@@ -124,10 +124,9 @@ alias dpsa='docker ps -a'
 alias mci='mvn clean install'
 alias cat='bat'
 alias rmlogfiles='sudo rm /private/var/log/asl/*.asl'
+alias v='nvim'
 
 
-#export http_proxy=http://127.0.0.1:1087;
-#export https_proxy=http://127.0.0.1:1087;
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 
 # install racket for scheme, source: https://docs.racket-lang.org/pollen/Installation.html

@@ -1,7 +1,5 @@
 call plug#begin()
 Plug 'morhetz/gruvbox'
-"Plug 'dense-analysis/ale'
-Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree'
 call plug#end()
